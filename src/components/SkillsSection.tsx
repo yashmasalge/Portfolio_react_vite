@@ -5,19 +5,74 @@ const SkillsSection = () => {
   const skillCategories = [
     {
       category: "Languages & Frameworks",
-      skills: ["Java", "JavaScript", "ReactJS", "NextJS", "HTML", "CSS", "NodeJS", "Flutter"]
+      skills: [
+        "Java",
+        "JavaScript",
+        "ReactJS",
+        "NextJS",
+        "HTML",
+        "CSS",
+        "NodeJS",
+        "Flutter",
+        "TypeScript",
+        "Spring Boot"
+      ]
     },
     {
       category: "Databases",
-      skills: ["MongoDB"]
+      skills: ["MongoDB", "Firestore", "MySQL", "Firebase"]
     },
     {
       category: "Tools & Platforms",
-      skills: ["Git", "GitHub", "DevOps"]
+      skills: ["Git", "GitHub", "DevOps", "Playwright"]
+    },
+    {
+      category: "Development",
+      skills: ["REST APIs", "Full Stack Development", "API Integration"]
     }
   ];
 
   const topSkills = [
+    {
+      name: "React.js",
+      level: 90
+    },
+    {
+      name: "Next.js",
+      level: 90
+    },
+    {
+      name: "TypeScript",
+      level: 85
+    },
+    {
+      name: "JavaScript",
+      level: 85
+    },
+    {
+      name: "Java",
+      level: 80
+    },
+    {
+      name: "Spring Boot",
+      level: 85
+    },
+    {
+      name: "REST APIs",
+      level: 90
+    },
+    {
+      name: "Full Stack Development",
+      level: 90
+    },
+    {
+      name: "Playwright",
+      level: 80
+    },
+    {
+      name: "API Integration",
+      level: 85
+    },
     {
       name: "NodeJS",
       level: 90
@@ -44,6 +99,9 @@ const SkillsSection = () => {
     <section id="skills" className="py-20">
       <div className="container mx-auto px-4">
         <h2 className="section-heading mb-12">Skills & Expertise</h2>
+        <p className="text-center text-muted-foreground max-w-2xl mx-auto -mt-8 mb-12">
+          Technologies and tools I use to build scalable, modern web applications.
+        </p>
         
         <div className="grid md:grid-cols-2 gap-10">
           <div>

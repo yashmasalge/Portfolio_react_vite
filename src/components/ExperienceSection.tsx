@@ -1,12 +1,27 @@
 
 import { Calendar, MapPin } from 'lucide-react';
+import { differenceInMonths, format } from 'date-fns';
+
+const getExperiencePeriod = (startDate: string, endDate?: string) => {
+  const start = new Date(`${startDate}T00:00:00`);
+  const end = endDate ? new Date(`${endDate}T00:00:00`) : new Date();
+  const totalMonths = differenceInMonths(end, start);
+  const years = Math.floor(totalMonths / 12);
+  const months = totalMonths % 12;
+  const duration = [
+    years ? `${years} year${years === 1 ? '' : 's'}` : '',
+    months ? `${months} month${months === 1 ? '' : 's'}` : ''
+  ].filter(Boolean).join(' ') || 'Less than a month';
+
+  return `${format(start, 'MMMM yyyy')} - ${endDate ? format(end, 'MMMM yyyy') : 'Present'} (${duration})`;
+};
 
 const ExperienceSection = () => {
   const experiences = [
     {
       title: "System Engineer",
       company: "Tata Consultancy Services",
-      period: "October 2023 - Present (1 year 7 months)",
+      period: getExperiencePeriod("2023-10-01"),
       location: "Pune, Maharashtra, India",
       description: [
         "Working as a System Engineer at TCS",
@@ -17,7 +32,7 @@ const ExperienceSection = () => {
     {
       title: "Intern",
       company: "DevTown",
-      period: "August 2021 - November 2021 (4 months)",
+      period: getExperiencePeriod("2021-08-01", "2021-11-30"),
       location: "Aurangabad, Maharashtra, India",
       description: [
         "Added skills to become Full-stack web developer",

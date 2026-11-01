@@ -66,6 +66,16 @@ const AboutSection = () => {
                 <span className="skill-badge bg-violet-600">Node.js</span>
                 <span className="skill-badge bg-violet-700">Express.js</span>
                 <span className="skill-badge bg-violet-800">DevOps</span>
+                <span className="skill-badge bg-violet-600">React.js</span>
+                <span className="skill-badge bg-violet-700">Next.js</span>
+                <span className="skill-badge bg-violet-800">TypeScript</span>
+                <span className="skill-badge bg-violet-600">JavaScript</span>
+                <span className="skill-badge bg-violet-700">Java</span>
+                <span className="skill-badge bg-violet-800">Spring Boot</span>
+                <span className="skill-badge bg-violet-600">REST APIs</span>
+                <span className="skill-badge bg-violet-700">Full Stack Development</span>
+                <span className="skill-badge bg-violet-800">Playwright</span>
+                <span className="skill-badge bg-violet-600">API Integration</span>
               </div>
             </div>
             
@@ -84,6 +94,11 @@ const AboutSection = () => {
                 <span className="skill-badge bg-purple-800">Next.js</span>
                 <span className="skill-badge bg-purple-600">MongoDB</span>
                 <span className="skill-badge bg-purple-700">Flutter</span>
+                <span className="skill-badge bg-purple-800">TypeScript</span>
+                <span className="skill-badge bg-purple-600">Java</span>
+                <span className="skill-badge bg-purple-700">Spring Boot</span>
+                <span className="skill-badge bg-purple-800">REST APIs</span>
+                <span className="skill-badge bg-purple-600">Playwright</span>
               </div>
             </div>
           </div>
